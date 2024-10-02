@@ -34,29 +34,8 @@ AZ-104 is a critical certification for professionals aiming to manage Azure serv
 
 ---
 
-### **2. Azure Licensing Models**
+### **2. EntraID Licensing Models**
 You can associate **Microsoft Entra ID P1** or **P2** with your Azure subscription. For new subscriptions, activate both your **licensing plan** and **Microsoft Entra ID** service. Learn more about trials via the [Entra ID P2 Trial](https://learn.microsoft.com/en-us/entra/).
-
-#### **Choosing a License**
-Before signing up, decide which subscription to use:
-- **Azure/Microsoft 365** subscription.
-- **Enterprise Mobility + Security (EMS)** plan.
-- **Microsoft Volume Licensing**.
-
----
-
-### **Azure Licensing Options**:
-1. **Free Tier**: 
-   - 55,000 free identities, ideal for testing and development.
-
-2. **P1 License (Premium 1)**:
-   - Advanced security and identity management for hybrid setups.
-
-3. **P2 License (Premium 2)**:
-   - Includes P1 features, plus enhanced identity protection for large enterprises.
-
-4. **Suite License**: 
-   - Combines **Microsoft 365** with Azure for integrated productivity and security.
 
 ---
 
@@ -81,6 +60,27 @@ Before signing up, decide which subscription to use:
      - You can also switch tenants by clicking the **gear icon** (⚙) near your profile image.
 
    > **Note**: Only a **Super Admin** can create new tenants. **Global Admins** do not have this privilege by default.
+
+---
+
+#### **Choosing a License**
+Before signing up, decide which subscription to use:
+- **Azure/Microsoft 365** subscription.
+- **Enterprise Mobility + Security (EMS)** plan.
+- **Microsoft Volume Licensing**.
+
+#### **EntraID Licensing Options**:
+1. **Free Tier**: 
+   - 55,000 free identities, ideal for testing and development.
+
+2. **P1 License (Premium 1)**:
+   - Advanced security and identity management for hybrid setups.
+
+3. **P2 License (Premium 2)**:
+   - Includes P1 features, plus enhanced identity protection for large enterprises.
+
+4. **Suite License**: 
+   - Combines **Microsoft 365** with Azure for integrated productivity and security.
 
 ---
 
@@ -123,24 +123,3 @@ Before signing up, decide which subscription to use:
    - **Free Courses**: Note that free courses typically do not include scenario-based training.
 
 ---
-
-### Future Repository Structure
-
-When you create your Git repository, you can organize these topics under different files and folders. For example:
-
-```plaintext
-azure-az104-notes/
-├── 01_Getting_Started_with_Azure/
-│   ├── sign_up_portal_azure.md
-│   ├── licensing_models.md
-├── 02_Tenants_and_Entra_ID/
-│   ├── working_with_tenants.md
-│   ├── creating_users.md
-│   ├── managing_users.md
-├── 03_Entra_ID_Roles/
-│   ├── entra_vs_service_roles.md
-├── 04_Advanced_AZ_Certifications/
-│   ├── az401_scenarios.md
-```
-
-This structure can evolve as you continue your learning.
