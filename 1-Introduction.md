@@ -1,4 +1,4 @@
-# AZ-104
+# AZ-104, Introduction:
 
 AZ-104 is the **Microsoft Azure Administrator** certification exam. It is designed for IT professionals who manage cloud services, including storage, networking, security, and compute capabilities within Microsoft Azure.
 
@@ -44,7 +44,7 @@ AZ-104 is a critical certification for professionals aiming to manage Azure serv
 4. **Conditional Access**: Controls how and when users can access resources based on location, device, and risk level.
 5. **Role-Based Access Control (RBAC)**: Assigns permissions to users based on their roles in the organization.
    
-#### **EntraID Licensing Options**:
+#### **EntraID Licensing Options**: https://learn.microsoft.com/en-us/entra/fundamentals/licensing
 1. **Free Tier**: 
    - 55,000 free identities, ideal for testing and development.
 
@@ -59,6 +59,23 @@ AZ-104 is a critical certification for professionals aiming to manage Azure serv
 
 
 Entra ID is crucial for managing identities and securing access in cloud and hybrid environments.
+
+---
+
+### What is Microsoft Entra? https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra
+
+https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra
+
+**Microsoft Entra** is a suite of identity and network access solutions designed to help organizations adopt a Zero Trust security strategy. It establishes a trust fabric that verifies identities, validates access conditions, checks permissions, encrypts connection channels, and continuously monitors for potential compromises.
+
+### **Microsoft Entra Product Family**
+
+The Microsoft Entra product family encompasses four maturity stages of secure end-to-end access for reliable identities. These stages include:
+- Implementing Zero Trust access controls
+- Securing access for employees
+- Securing access for customers and partners
+- Protecting any cloud environment
+
 
 ---
 
