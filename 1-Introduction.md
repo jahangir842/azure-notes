@@ -34,8 +34,31 @@ AZ-104 is a critical certification for professionals aiming to manage Azure serv
 
 ---
 
-### **2. EntraID Licensing Models**
-You can associate **Microsoft Entra ID P1** or **P2** with your Azure subscription. For new subscriptions, activate both your **licensing plan** and **Microsoft Entra ID** service. Learn more about trials via the [Entra ID P2 Trial](https://learn.microsoft.com/en-us/entra/).
+### 2. EntraID 
+**Entra ID**, previously known as **Azure Active Directory (Azure AD)**, is Microsoft’s cloud-based identity and access management service. It provides secure sign-in, authentication, and access control for users and applications within the Azure ecosystem and beyond. 
+
+### Key Features:
+1. **User Authentication**: Manages user identities and grants access to apps and services.
+2. **Single Sign-On (SSO)**: Allows users to access multiple apps with one set of credentials.
+3. **Multi-Factor Authentication (MFA)**: Adds an extra layer of security by requiring a second form of verification.
+4. **Conditional Access**: Controls how and when users can access resources based on location, device, and risk level.
+5. **Role-Based Access Control (RBAC)**: Assigns permissions to users based on their roles in the organization.
+   
+#### **EntraID Licensing Options**:
+1. **Free Tier**: 
+   - 55,000 free identities, ideal for testing and development.
+
+2. **P1 License (Premium 1)**:
+   - Advanced security and identity management for hybrid setups.
+
+3. **P2 License (Premium 2)**:
+   - Includes P1 features, plus enhanced identity protection for large enterprises.
+
+4. **Suite License**: 
+   - Combines **Microsoft 365** with Azure for integrated productivity and security.
+
+
+Entra ID is crucial for managing identities and securing access in cloud and hybrid environments.
 
 ---
 
@@ -69,18 +92,6 @@ Before signing up, decide which subscription to use:
 - **Enterprise Mobility + Security (EMS)** plan.
 - **Microsoft Volume Licensing**.
 
-#### **EntraID Licensing Options**:
-1. **Free Tier**: 
-   - 55,000 free identities, ideal for testing and development.
-
-2. **P1 License (Premium 1)**:
-   - Advanced security and identity management for hybrid setups.
-
-3. **P2 License (Premium 2)**:
-   - Includes P1 features, plus enhanced identity protection for large enterprises.
-
-4. **Suite License**: 
-   - Combines **Microsoft 365** with Azure for integrated productivity and security.
 
 ---
 
