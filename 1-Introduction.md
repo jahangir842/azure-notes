@@ -64,8 +64,6 @@ Entra ID is crucial for managing identities and securing access in cloud and hyb
 
 ### What is Microsoft Entra? https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra
 
-https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra
-
 **Microsoft Entra** is a suite of identity and network access solutions designed to help organizations adopt a Zero Trust security strategy. It establishes a trust fabric that verifies identities, validates access conditions, checks permissions, encrypts connection channels, and continuously monitors for potential compromises.
 
 ### **Microsoft Entra Product Family**
@@ -84,7 +82,7 @@ The Microsoft Entra product family encompasses four maturity stages of secure en
 - **Directory = Tenant**: In Azure, a **directory** and a **tenant** are essentially the same thing. They are used to manage identities and resources within the Azure ecosystem.
 - **Multiple Tenants**: You can create multiple tenants (directories) if needed. Each tenant can be used for different environments or organizations.
 
-   > **Note**: Currently, there may be limitations in creating tenants, such as admin rights or feature availability.
+   > **Note**: Only paid customers can create a new Workforce tenant in Microsoft Entra ID. Customers using a free tenant, or a trial subscription won't be able to create additional tenants from the Microsoft Entra admin center..
 
 ---
 
