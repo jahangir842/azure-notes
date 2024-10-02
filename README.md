@@ -1,11 +1,4 @@
-To create a comprehensive and well-organized GitHub repository for your Azure AZ-104 certification notes, here's a step-by-step plan that will not only help you organize your notes but also serve as a valuable future reference:
-
-### 1. **Repository Setup**
-   - **Repository Name**: `azure-az104-notes`
-   - **Description**: Add a brief description like: "Detailed notes for Microsoft Azure AZ-104 System Administrator Certification."
-   - **Repository Type**: Public or Private based on your preference.
-
-### 2. **Folder Structure**
+### Folder Structure
 Organizing your notes by major topics will help in easy reference. You can use the AZ-104 exam objectives to structure the notes logically.
 
 ```
@@ -133,14 +126,3 @@ VM pricing depends on the size, type, and region. Azure provides cost management
    - **Glossary**: Create a glossary of terms for quick reference.
    - **Practice Questions**: Create a folder for any practice questions or scenarios related to AZ-104.
 
----
-
-### Final Checklist:
-- [ ] Create repository on GitHub.
-- [ ] Set up folder structure.
-- [ ] Add topic-based notes.
-- [ ] Format notes with headings, commands, and examples.
-- [ ] Create a README with clear instructions.
-- [ ] Add references and external resources.
-  
-This plan will keep your notes organized, easy to reference, and valuable as a study guide for future certification preparation.
