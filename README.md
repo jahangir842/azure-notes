@@ -1,7 +1,7 @@
 # 🌐 **Azure AZ-104 Study Notes** 🎓
 
 
-## Instructor: 
+### Instructor: 
 **Medam [Gulnaz Mushtaq](https://www.linkedin.com/in/gulnaz-mushtaq/):**
 Microsoft Certified Trainer Regional Lead, Pakistan | MVP | Enrique Lima Award winner | Microsoft Learning Expert | Consultant | Corporate Trainer | IT Expert | Technical Writer | Speaker
 
