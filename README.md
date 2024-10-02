@@ -1,10 +1,10 @@
-# 🌐 **Azure AZ-104 Study Notes** 🎓
-
+## 🌐 **Azure AZ-104 Study Notes** 🎓
 
 ### Instructor: 
 **Medam [Gulnaz Mushtaq](https://www.linkedin.com/in/gulnaz-mushtaq/):**
 Microsoft Certified Trainer Regional Lead, Pakistan | MVP | Enrique Lima Award winner | Microsoft Learning Expert | Consultant | Corporate Trainer | IT Expert | Technical Writer | Speaker
 
+---
 
 Welcome to my **Azure AZ-104 Study Notes** repository! 🚀 These notes are curated from the **Microsoft Certified: Azure Administrator Associate (AZ-104)** course, which I'm currently attending at **Corvit Systems Rawalpindi**. The course is led by the highly knowledgeable **Medam Gulnaz Mushtaq**. 💼 You can connect with her on [LinkedIn](https://www.linkedin.com/in/gulnaz-mushtaq/) for more insights into Azure and her exceptional training programs.
 
