@@ -1,10 +1,5 @@
 ### Notes: Managing Azure Resources via Azure Portal
 
-#### **Objective**:  
-Explore Azure administration tasks, including resource provisioning, organizing resources into groups, moving resources between groups, and protecting resources from accidental deletion.
-
----
-
 #### **Tasks Overview**:
 
 1. **Create Resource Groups and Deploy Resources**  
