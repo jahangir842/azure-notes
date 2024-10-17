@@ -1,4 +1,4 @@
-### Notes: Managing Azure Resources via Azure Portal
+### Notes: Managing Azure Resources Group
 
 #### **Tasks Overview**:
 
