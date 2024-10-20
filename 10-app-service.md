@@ -149,8 +149,6 @@ Azure App Service Plans are a fundamental aspect of deploying applications in Az
 
 **Scaling** in Azure App Service refers to adjusting the resources allocated to your web app to handle varying loads. There are two primary scaling strategies: **Scale Up** and **Scale Out**.
 
----
-
 #### **Scale Up (Vertical Scaling)**
 
 - **Definition**: Scaling up involves increasing the resources of your existing app service plan. This typically means moving to a higher pricing tier that provides more CPU, memory, and storage.
@@ -161,8 +159,6 @@ Azure App Service Plans are a fundamental aspect of deploying applications in Az
   
 - **Example**:
   - Upgrading from a **Basic** tier to a **Standard** or **Premium** tier to gain more resources and additional features, such as enhanced performance, auto-scaling, and more.
-
----
 
 #### **Scale Out (Horizontal Scaling)**
 
