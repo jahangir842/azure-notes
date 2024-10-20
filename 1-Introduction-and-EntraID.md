@@ -14,11 +14,6 @@ AZ-104 is the **Microsoft Azure Administrator** certification exam. It is design
 - IT professionals looking to manage cloud resources in Azure environments.
 - Administrators managing day-to-day tasks such as deployment, monitoring, and security in Azure.
 
-### Exam Format:
-- **Duration**: 120 minutes
-- **Questions**: 40-60 questions (multiple-choice, scenario-based, drag-and-drop, etc.)
-- **Cost**: Approximately $165 (may vary by location).
-
 ### Related Certifications
 - **Prerequisite**: No formal prerequisites, though experience in Azure is recommended.
 - **Related Certifications**: Azure Fundamentals (AZ-900), Azure Solutions Architect (AZ-305), Azure DevOps Engineer (AZ-400).
