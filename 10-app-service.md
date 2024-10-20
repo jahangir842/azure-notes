@@ -6,7 +6,15 @@
 
 ### **Azure App Service Overview**
 
-Azure App Service is a fully managed platform for building, deploying, and scaling web applications, APIs, and mobile backends. It supports multiple programming languages and frameworks, including .NET, Java, Node.js, Python, and PHP.
+Azure App Service is a fully managed platform for building, deploying, and scaling web applications, APIs, and mobile backends. It supports multiple programming languages and frameworks, including 
+
+- .NET
+- Java
+- Node.js
+- Python
+- PHP
+- Ruby
+- docker
 
 ### **Key Features**
 
