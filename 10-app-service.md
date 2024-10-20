@@ -43,7 +43,7 @@ Azure App Service is a fully managed platform for building, deploying, and scali
    - Integration with Azure Monitor and Application Insights for performance monitoring and diagnostics.
 
 7. **Security Features**:
-   - Supports authentication/authorization with Azure Active Directory, Facebook, Google, and other providers.
+   - Supports authentication/authorization with Azure EntraID, Facebook, Google, and other providers.
    - Network security through Virtual Network Integration and Private Endpoints.
 
 ### **Benefits of Azure App Service**
