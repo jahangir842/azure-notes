@@ -44,7 +44,9 @@ Azure App Service is a fully managed platform for building, deploying, and scali
 - **Cost-effective**: Pay only for the resources you use, with various pricing tiers to fit different needs.
 - **Compliance**: Helps meet industry standards with built-in security and compliance features.
 
-### **Lab: Creating an Azure Web App with Azure App Service**
+---
+
+## **Lab: Creating an Azure Web App with Azure App Service**
 
 This lab guides you through creating a simple web application using Azure App Service.
 
