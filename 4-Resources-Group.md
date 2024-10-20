@@ -6,7 +6,7 @@
 - https://www.youtube.com/watch?v=g6thrYZhPZY
 - https://www.youtube.com/watch?v=gIhf-S7BCdo
 
-### 1.Azure Resource Group
+### Azure Resource Group
 
 An **Azure Resource Group** is a logical container that holds related Azure resources. It helps manage, organize, and group resources such as virtual machines, storage accounts, and databases that share the same lifecycle. 
 
@@ -48,7 +48,7 @@ By leveraging these features, Azure Resource Groups help streamline resource man
 
 ---
 
-### **2. Create Resource Groups and Deploy Resources**
+### **Create Resource Groups and Deploy Resources**
 
 - **Objective**: Create a resource group and deploy resources within it using the Azure portal.
 
@@ -72,7 +72,7 @@ By leveraging these features, Azure Resource Groups help streamline resource man
 
 ---
 
-### **3. Move Resources Between Resource Groups**
+### **Move Resources Between Resource Groups**
 
 - **Objective**: Move resources from one resource group to another.
 
@@ -91,7 +91,7 @@ By leveraging these features, Azure Resource Groups help streamline resource man
 
 ---
 
-### **4. Implement and Test Resource Locks**
+### **Implement and Test Resource Locks**
 
 - **Objective**: Apply locks to resources to prevent accidental deletion or modification.
 
@@ -117,7 +117,7 @@ By leveraging these features, Azure Resource Groups help streamline resource man
 
 ---
 
-### **5. Review of Actions Taken**
+### **Review of Actions Taken**
 
 - **Created Resource Groups**:
   - Successfully created and configured resource groups (`Test-RG`, `Test-RG2`, `Test-RG3`).
@@ -133,7 +133,7 @@ By leveraging these features, Azure Resource Groups help streamline resource man
 
 ---
 
-### **6. Key Learnings and Best Practices**
+### **Key Learnings and Best Practices**
 
 - **Resource Group Management**: Organizing resources logically using resource groups is critical for efficient management and monitoring.
   
