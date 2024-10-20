@@ -6,7 +6,7 @@ AZ-104 is the **Microsoft Azure Administrator** certification exam. It is design
 - **Manage Azure Subscriptions and Resources**: Monitor usage and billing, manage resource groups, and administer Azure policies.
 - **Implement and Manage Storage**: Secure and manage storage accounts, configure Azure files, and implement backup and restore capabilities.
 - **Manage and Configure Virtual Networks**: Set up virtual networks, implement network security groups, and configure load balancing.
-- **Manage Azure Identities and Governance**: Control access using role-based access control (RBAC), manage identities, and configure multi-factor authentication (MFA) and Azure Active Directory (AD).
+- **Manage Azure Identities and Governance**: Control access using role-based access control (RBAC), manage identities, and configure multi-factor authentication (MFA) and Azure EntraID.
 - **Deploy and Manage Compute Resources**: Create and configure virtual machines (VMs), manage VM backups, and monitor the health of VMs.
 - **Monitor and Maintain Azure Resources**: Set up monitoring, analyze alerts, and implement Azure backup solutions.
 
