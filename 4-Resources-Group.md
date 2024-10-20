@@ -6,7 +6,7 @@
 - [Microsoft Learn: ARM template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/)
 - https://www.youtube.com/watch?v=g6thrYZhPZY
 - https://www.youtube.com/watch?v=gIhf-S7BCdo
-- [ARM Playlist](https://www.youtube.com/playlist?list=PLGjZwEtPN7j8_kgw92LHBrry2gnVc3NXQ)
+
 
 ### Azure Resource Group
 
