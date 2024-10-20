@@ -72,28 +72,28 @@ An **Azure App Service Plan** defines the region (datacenter) of the physical se
 ### Key Concepts
 
 1. **Pricing Tiers**:
-   - Azure App Service Plans offer different pricing tiers that dictate the capabilities and resources available for your applications. These include:
-     - **Free**: Limited features, ideal for testing and development.
-     - **Shared**: Similar to Free but allows apps to share resources in the same plan.
-     - **Basic**: Dedicated resources, scaling, and custom domains.
-     - **Standard**: Supports auto-scaling and custom domains, with increased performance.
-     - **Premium**: Enhanced performance, additional features, and support for more instances.
-     - **Isolated**: Fully isolated environments, best for compliance and security needs.
+   In Azure, a **SKU (Stock Keeping Unit)** for web apps defines the pricing tier and resource level for the app. It specifies performance (CPU, memory), features (e.g., scaling, custom domains), and cost. These include:
+    
+   - **Free Tier (F1):** Limited resources, ideal for testing.
+   - **Basic (B1, B2, B3):** Dedicated compute resources, suitable for small-scale apps.
+   - **Standard (S1, S2, S3):** Auto-scaling, custom domains, and SSL support.
+   - **Premium (P1v3, P2v3, P3v3):** Enhanced performance, more scaling options.
+   - **Isolated (I1, I2, I3):** For high-security and isolated environments.
 
-2. **Instance Scaling**:
+3. **Instance Scaling**:
    - **Vertical Scaling**: Changing the pricing tier to allocate more resources (CPU, memory).
    - **Horizontal Scaling**: Increasing or decreasing the number of instances running your app.
 
-3. **Regional Availability**:
+4. **Regional Availability**:
    - The App Service Plan can be created in specific Azure regions, affecting latency and compliance.
 
-4. **Resource Limits**:
+5. **Resource Limits**:
    - Each pricing tier has its limits on the number of instances, storage, and traffic that can be handled.
 
-5. **Custom Domain and SSL Support**:
+6. **Custom Domain and SSL Support**:
    - Higher tiers support custom domains and SSL certificates for secure connections.
 
-6. **Integrated Features**:
+7. **Integrated Features**:
    - Each plan includes features such as auto-scaling, backups, and diagnostics depending on the tier selected.
 
 ### Creating an Azure App Service Plan
@@ -173,10 +173,11 @@ This lab guides you through creating a simple web application using Azure App Se
    - Click **+ Create**.
    - Select your **Subscription** and **Resource Group**.
    - Enter a name for your web app (must be unique, e.g., `myuniquewebappname`).
-   - Choose your **Publish** method (Code or Docker container).
-   - Select the **Runtime stack** (e.g., .NET, Node.js, Python).
+   - Choose your **Publish** method (Code, Static Web App or Container).
+   - Select the **Runtime stack** (e.g., .NET, Node.js, Python, php).
+   - Select the **Operating System** (Windows or Linux)
    - Choose the **Region** (same as your App Service Plan).
-   - Under **App Service Plan**, select the plan you created earlier.
+   - Under **App Service Plan**, select the plan you created earlier or create new now.
    - Click **Review + Create**, then **Create**.
 
 5. **Deploy Your Application**:
