@@ -33,7 +33,7 @@ Azure Resource Groups offer several key benefits for managing and organizing clo
    - **Example**: Automating the deployment of a web application consisting of a virtual network, virtual machines, and a database, all within the same resource group.
 
 ### 5. **Resource Group-Level Tagging and Organization**
-   - **Benefit**: You can apply **tags** to a resource group for organizing and categorizing resources based on projects, environments, or departments. These tags help track and manage resources effectively.
+   - **Benefit**: You can apply **tags** to a resource group for organizing and categorizing resources based on projects, environments, or departments. These tags help track and manage resources effectively. **Note:** The tags will not be inherited to resources.
    - **Example**: Tagging all resources within a resource group as `Project: XYZ` and `Environment: Production` helps easily identify and manage resources related to that project and environment.
 
 ### 6. **Resource Group-Level Monitoring**
