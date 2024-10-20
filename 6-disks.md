@@ -159,3 +159,128 @@ Azure provides flexible and scalable disk storage options for your virtual machi
 ### **Conclusion**
 
 Azure provides highly flexible disk storage options with various performance tiers and redundancy features. Whether creating a disk for a virtual machine or managing storage across multiple zones, it is essential to configure disks based on workload requirements, such as size, performance (SSD vs. HDD), and availability needs. Azure’s automation tools like ARM templates make it easier to deploy and manage resources consistently and efficiently.
+
+---
+
+## Lab: Working with Azure Disks
+
+In this lab, we will explore Azure Disks, including creating managed disks, attaching them to virtual machines, and using snapshots and backups for data protection. The steps will guide you through the process of working with Azure Disks in the Azure portal.
+
+### **Lab Overview**
+
+**Objectives:**
+1. Create an Azure managed disk.
+2. Attach the disk to an existing Azure Virtual Machine (VM).
+3. Create a snapshot of the disk.
+4. Backup the disk.
+5. Detach and delete the disk.
+
+### **Pre-requisites**
+
+- An active Azure subscription.
+- Access to the Azure portal ([https://portal.azure.com](https://portal.azure.com)).
+- An existing Azure Virtual Machine (VM) to which you can attach disks.
+
+---
+
+### **Step 1: Create a Managed Disk**
+
+1. **Log in to Azure Portal**:
+   - Open your web browser and navigate to [Azure Portal](https://portal.azure.com).
+   - Log in with your Azure credentials.
+
+2. **Create a Managed Disk**:
+   - In the Azure portal, use the search bar at the top to search for **Disks** and click on it.
+   - Click on **+ Create**.
+   - Fill in the details:
+     - **Subscription**: Select your subscription.
+     - **Resource Group**: Choose an existing resource group or create a new one (e.g., "MyDiskResourceGroup").
+     - **Disk Name**: Enter a name for your disk (e.g., "MyManagedDisk").
+     - **Region**: Select the same region as your VM.
+     - **Availability Options**: Choose "No redundancy" for this lab.
+     - **Source Type**: Select "None" since we are creating a new disk.
+     - **Disk Type**: Choose the type of disk (e.g., "Standard SSD", "Premium SSD", or "Standard HDD").
+     - **Size + performance**: Select the size of the disk based on your needs (e.g., 128 GB).
+   - Click on **Review + Create**, then **Create**.
+
+3. **Verify Disk Creation**:
+   - After a few moments, you will see a notification that the disk has been created successfully.
+   - Click on **Go to resource** to view your managed disk.
+
+---
+
+### **Step 2: Attach the Managed Disk to an Existing VM**
+
+1. **Navigate to the Virtual Machine**:
+   - In the Azure portal, search for **Virtual Machines** and click on it.
+   - Select the VM to which you want to attach the disk (e.g., "MyTestVM").
+
+2. **Attach the Disk**:
+   - In the VM's blade, click on **Disks** under the "Settings" section.
+   - Click on **+ Add data disk**.
+   - In the **Name** dropdown, select the managed disk you just created (e.g., "MyManagedDisk").
+   - Leave the **LUN** as the default (0) unless you have specific requirements.
+   - Ensure **Enable auto-delete on detach** is checked if you want Azure to automatically delete the disk when detached.
+   - Click **Save** to attach the disk.
+
+3. **Verify Disk Attachment**:
+   - After the save operation completes, you should see your managed disk listed under the **Data disks** section.
+
+---
+
+### **Step 3: Create a Snapshot of the Managed Disk**
+
+1. **Navigate to the Managed Disk**:
+   - In the Azure portal, go back to **Disks**.
+   - Click on the disk you created earlier (e.g., "MyManagedDisk").
+
+2. **Create a Snapshot**:
+   - In the disk's blade, click on **Snapshots** in the "Settings" section.
+   - Click on **+ Create snapshot**.
+   - Fill in the details:
+     - **Name**: Enter a name for the snapshot (e.g., "MyDiskSnapshot").
+     - **Resource Group**: Choose the same resource group as the managed disk or create a new one.
+     - **Snapshot Type**: Choose "Full" (this will create a full snapshot of the disk).
+   - Click on **Review + Create**, then **Create**.
+
+3. **Verify Snapshot Creation**:
+   - After a few moments, you will see a notification indicating the snapshot has been created successfully.
+   - Navigate back to **Snapshots** in the Azure portal to confirm the snapshot appears in the list.
+
+---
+
+### **Step 4: Backup the Managed Disk**
+
+1. **Navigate to the Managed Disk**:
+   - Go back to **Disks** and select the managed disk (e.g., "MyManagedDisk").
+
+2. **Create a Backup**:
+   - In the disk's blade, click on **Backups** in the "Settings" section.
+   - Click on **+ Backup**.
+   - Choose the **Backup policy** (if no policy exists, you'll need to create one first).
+   - Click on **Backup** to start the backup process.
+
+3. **Verify Backup Creation**:
+   - After the backup process completes, you can check the backup status in the **Backups** section of the managed disk.
+
+---
+
+### **Step 5: Detach and Delete the Managed Disk**
+
+1. **Detach the Disk from the VM**:
+   - Go back to the VM (e.g., "MyTestVM").
+   - Click on **Disks**.
+   - Click on the disk you attached earlier.
+   - Click on **Detach** to remove the disk from the VM. Confirm the action.
+
+2. **Delete the Managed Disk**:
+   - After detaching, go back to **Disks** in the Azure portal.
+   - Select the disk you created (e.g., "MyManagedDisk").
+   - Click on **Delete** at the top of the disk's blade.
+   - Confirm the deletion.
+
+---
+
+### **Conclusion**
+
+In this lab, you learned how to create and manage Azure Disks, attach them to a virtual machine, create snapshots for backup purposes, and finally, detach and delete the disk. Azure Disks provide a robust storage solution that can be used to enhance the performance and reliability of your virtual machines. You can further explore Azure Disk features, such as geo-replication and scaling options, to optimize your cloud storage strategy.
