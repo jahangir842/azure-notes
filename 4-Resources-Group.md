@@ -16,7 +16,7 @@ An **Azure Resource Group** is a logical container that holds related Azure reso
 Key points:
 1. **Organization**: Resources in a group can be managed collectively (e.g., applying policies, setting access controls).
 2. **Lifecycle Management**: Deleting a resource group removes all resources within it.
-3. **Location**: Although resources in a group can reside in different regions, the resource group itself is defined within one Azure region.
+3. **Location**: Although resources in a group can reside in different regions, the resource group itself (metadata) is defined within one Azure region.
 4. **Tagging**: Resource groups can have metadata tags for cost tracking and management.
 
 A resource must be part of exactly one resource group, and resources within a group can be linked but do not need to interact with each other.
