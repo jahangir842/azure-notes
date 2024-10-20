@@ -7,9 +7,19 @@
 - https://www.youtube.com/watch?v=gIhf-S7BCdo
 
 
-#### **1. Overview of Tasks**
 
-This guide covers key tasks involved in managing Azure Resource Groups, including creating resource groups, deploying resources, moving resources between groups, and applying resource locks to protect resources from accidental changes.
+
+### 1.Azure Resource Group
+
+An **Azure Resource Group** is a logical container that holds related Azure resources. It helps manage, organize, and group resources such as virtual machines, storage accounts, and databases that share the same lifecycle. 
+
+Key points:
+1. **Organization**: Resources in a group can be managed collectively (e.g., applying policies, setting access controls).
+2. **Lifecycle Management**: Deleting a resource group removes all resources within it.
+3. **Location**: Although resources in a group can reside in different regions, the resource group itself is defined within one Azure region.
+4. **Tagging**: Resource groups can have metadata tags for cost tracking and management.
+
+A resource must be part of exactly one resource group, and resources within a group can be linked but do not need to interact with each other.
 
 ---
 
