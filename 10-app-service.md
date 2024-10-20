@@ -1,5 +1,3 @@
-Here are detailed notes about Azure App Service, including its features, benefits, and a lab for hands-on experience.
-
 ### **Azure App Service Overview**
 
 Azure App Service is a fully managed platform for building, deploying, and scaling web applications, APIs, and mobile backends. It supports multiple programming languages and frameworks, including .NET, Java, Node.js, Python, and PHP.
