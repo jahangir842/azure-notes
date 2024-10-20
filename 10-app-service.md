@@ -2,6 +2,7 @@
 - [Getting started with Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/getting-started?pivots=stack-net)
 - https://www.youtube.com/watch?v=4BwyqmRTrx8
 - [app-service-sidecar](https://github.com/Azure-Samples/app-service-sidecar-tutorial-prereqs)
+- [sidecar container](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container-sidecar)
   
 ---
 
