@@ -181,7 +181,7 @@ This lab guides you through creating a simple web application using Azure App Se
    - Click **Review + Create**, then **Create**.
 
 5. **Deploy Your Application**:
-   - After deployment, go to the **Web App** overview page.
+   - After this template deployment, go to the **Web App** overview page.
    - Click on **Deployment Center** in the left menu.
    - Select your source control (e.g., GitHub, Bitbucket) for continuous deployment or choose **Local Git** for manual deployment.
    - Follow the prompts to connect to your source and configure the deployment.
