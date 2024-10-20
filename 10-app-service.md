@@ -140,7 +140,7 @@ Azure App Service Plans are a fundamental aspect of deploying applications in Az
 
 ---
 
-## **Lab: Creating an Azure Web App with Azure App Service**
+## **Lab 1: Creating an Azure Web App with Azure App Service**
 
 This lab guides you through creating a simple web application using Azure App Service.
 
@@ -194,6 +194,42 @@ This lab guides you through creating a simple web application using Azure App Se
    - Navigate to **Metrics** and **Logs** under the Web App to monitor performance.
    - Go to **Scale Up** or **Scale Out** options in the left menu to adjust resources as needed.
 
-### **Conclusion**
+---
 
-Azure App Service is a powerful platform for building and hosting web applications with features that streamline development, enhance scalability, and ensure security. The lab provided hands-on experience in creating and deploying a web app, showcasing the simplicity and efficiency of the Azure App Service environment.
+### Lab 2: Deploy WordPress in Azure App Service
+
+1. **Sign in to Azure Portal**:
+   - Go to [Azure Portal](https://portal.azure.com) and log in.
+
+2. **Navigate to App Services**:
+   - In the left-hand menu, select **App Services**.
+   - Click on **Create**.
+
+3. **Select WordPress**:
+   - Select **WordPress on App Service**.
+
+4. **Configure WordPress Basics**:
+   - **Subscription**: Choose your subscription.
+   - **Resource Group**: Select an existing group or create a new one.
+   - **Region**: Select your region (e.g., **West US**).
+   - **Name**: Provide a unique name for the web app (e.g., `yourappname.azurewebsites.net`).
+   - **Uncheck** Unique default hostname to make the site address shorter.
+
+5. **Select Hosting Plan**:
+   - Choose a hosting plan such as **Basic** (includes a burstable MySQL database).
+   - If only free and basic plans are supported, select the **Basic** plan or upgrade the subscription for more options.
+
+6. **WordPress Setup**:
+   - **Site Language**: Select the preferred language for your WordPress site (e.g., **English (United States)**).
+   - **Admin Email**: Provide an admin email for the WordPress dashboard.
+   - **Admin Username**: Set your WordPress admin username.
+   - **Admin Password**: Choose a secure password and confirm it.
+
+7. **Review and Create**:
+   - After entering all details, click **Review + Create**.
+   - Once validated, click **Create** to deploy WordPress on Azure App Service.
+
+8. **Access Your WordPress Site**:
+   - Once deployment completes, go to **App Services** and select your WordPress app.
+   - Use the provided URL to access your WordPress site and log in using the admin credentials.
+   - Or just access it through your address: **yourappname.azurewebsites.net/wp-admin**
