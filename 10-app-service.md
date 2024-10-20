@@ -14,7 +14,9 @@ Azure App Service is a fully managed platform for building, deploying, and scali
 - Python
 - PHP
 - Ruby
-- docker
+- **docker**
+
+---
 
 ### **Key Features**
 
