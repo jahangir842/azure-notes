@@ -52,11 +52,9 @@ Azure resources are the individual components you create and manage in Microsoft
 4. **Monitor Resources**: Use Azure Monitor and Azure Security Center for ongoing visibility and security.
 5. **Automate Deployments**: Utilize ARM templates or Azure DevOps for consistent and repeatable resource deployments.
 
-### **Conclusion**
-
-Azure resources are fundamental to building and managing applications in the cloud. Understanding the various types of resources, their management, and best practices is essential for optimizing Azure deployments and ensuring effective resource governance.
-
 ---
+
+## JSON templates
 
 Azure resources can indeed be represented as a JSON template, specifically using Azure Resource Manager (ARM) templates. These templates allow you to define the infrastructure and configuration for your Azure solutions in a declarative manner. Here's an overview of Azure resources in the context of ARM templates, along with a sample template:
 
