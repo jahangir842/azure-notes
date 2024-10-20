@@ -1,3 +1,8 @@
+### Resources
+
+-  [Microsoft Learn: ARM template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/)
+-  [ARM Playlist](https://www.youtube.com/playlist?list=PLGjZwEtPN7j8_kgw92LHBrry2gnVc3NXQ)
+
 ### Azure Resource Manager (ARM)
 
 Whether we deploy Azure resources through the Azure Portal, Azure CLI, Azure PowerShell, or REST APIs, all resource management and deployments are ultimately handled by Azure Resource Manager (ARM). **Azure Resource Manager (ARM)** is the deployment and management service for Microsoft Azure. It provides a unified management layer for deploying, managing, and monitoring resources in Azure.
