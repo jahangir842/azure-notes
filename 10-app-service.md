@@ -1,7 +1,7 @@
 ### Reference:
 - [Getting started with Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/getting-started?pivots=stack-net)
 - https://www.youtube.com/watch?v=4BwyqmRTrx8
-- [PHP Sample App](https://github.com/Azure-Samples/php-docs-hello-world)
+- [app-service-sidecar](https://github.com/Azure-Samples/app-service-sidecar-tutorial-prereqs))
 ---
 
 ### **Azure App Service Overview**
