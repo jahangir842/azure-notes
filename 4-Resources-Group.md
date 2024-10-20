@@ -1,5 +1,11 @@
 ### Managing Azure Resource Groups
 
+**Reference:**
+- [Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
+- https://www.youtube.com/watch?v=g6thrYZhPZY
+- https://www.youtube.com/watch?v=gIhf-S7BCdo
+
+
 #### **1. Overview of Tasks**
 
 This guide covers key tasks involved in managing Azure Resource Groups, including creating resource groups, deploying resources, moving resources between groups, and applying resource locks to protect resources from accidental changes.
