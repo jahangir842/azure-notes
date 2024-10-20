@@ -1,3 +1,9 @@
+### Reference:
+- [Getting started with Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/getting-started?pivots=stack-net)
+- https://www.youtube.com/watch?v=4BwyqmRTrx8
+
+---
+
 ### **Azure App Service Overview**
 
 Azure App Service is a fully managed platform for building, deploying, and scaling web applications, APIs, and mobile backends. It supports multiple programming languages and frameworks, including .NET, Java, Node.js, Python, and PHP.
