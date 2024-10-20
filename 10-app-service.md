@@ -55,6 +55,8 @@ Azure App Service is a fully managed platform for building, deploying, and scali
    - Supports authentication/authorization with Azure EntraID, Facebook, Google, and other providers.
    - Network security through Virtual Network Integration and Private Endpoints.
 
+---
+
 ### **Benefits of Azure App Service**
 
 - **Speed**: Rapidly deploy and update applications with built-in templates and services.
@@ -123,6 +125,8 @@ An **Azure App Service Plan** defines the region (datacenter) of the physical se
 5. **Review + Create**:
    - Review your configuration and click **Create**.
 
+---
+
 ### Managing App Service Plans
 
 - **Scaling**:
@@ -140,7 +144,7 @@ Azure App Service Plans are a fundamental aspect of deploying applications in Az
 
 ---
 
-### **Deployment Slot in Azure App Service**
+### **Deployment Slot in Azure App Service** (Not in Freetier)
 
 A **deployment slot** in Azure App Service allows you to host different versions of your web application within the same App Service plan. Each slot represents a separate environment where you can deploy and test your application without affecting the production version. 
 
