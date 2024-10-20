@@ -140,6 +140,31 @@ Azure App Service Plans are a fundamental aspect of deploying applications in Az
 
 ---
 
+### **Deployment Slot in Azure App Service**
+
+A **deployment slot** in Azure App Service allows you to host different versions of your web application within the same App Service plan. Each slot represents a separate environment where you can deploy and test your application without affecting the production version. 
+
+#### **Key Features:**
+- **Isolation**: Each slot operates independently, enabling you to test new features or bug fixes without impacting the live application.
+- **Configuration**: You can configure each slot with its settings (e.g., connection strings, app settings), or share configurations between slots.
+- **Swap Functionality**: You can easily swap a deployment slot with your production slot, promoting the changes to the live environment while minimizing downtime.
+- **Rollback**: If issues arise after a swap, you can quickly swap back to the previous version.
+
+#### **Common Use Cases:**
+- **Staging Environment**: Use a staging slot to test new features or updates before they go live.
+- **A/B Testing**: Run different versions of your app in different slots to test performance or user experience.
+- **Hotfixes**: Deploy urgent fixes to a separate slot and then swap it into production when ready.
+
+#### **How It Works:**
+1. **Create a Slot**: In the Azure Portal, navigate to your App Service and select **Deployment Slots**. Click on **Add Slot** and provide a name.
+2. **Deploy to the Slot**: Deploy your application to the newly created slot.
+3. **Test Your Application**: Validate that everything works as expected.
+4. **Swap Slots**: Once validated, you can swap the slot with the production environment, promoting the new version.
+
+Using deployment slots enhances your deployment strategy by allowing safe and efficient application updates.
+
+---
+
 ## **Lab 1: Creating an Azure Web App with Azure App Service**
 
 This lab guides you through creating a simple web application using Azure App Service.
