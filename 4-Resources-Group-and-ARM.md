@@ -3,6 +3,7 @@
 **Reference:**
 - [Microsoft Learn: Azure resource groups](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 - [Microsoft Learn: Organise Azure resources effectively](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources)
+- [Microsoft Learn: ARM template](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/)
 - https://www.youtube.com/watch?v=g6thrYZhPZY
 - https://www.youtube.com/watch?v=gIhf-S7BCdo
 - [ARM Playlist](https://www.youtube.com/playlist?list=PLGjZwEtPN7j8_kgw92LHBrry2gnVc3NXQ)
