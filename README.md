@@ -16,7 +16,7 @@ For questions, discussions, or collaboration opportunities, feel free to reach o
 
 ### Microsoft Learn for AZ-104
 
-Must Consult [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification)
+For prepatation of this certification must Consult [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification)
 
 ---
 
@@ -36,5 +36,3 @@ These notes cover everything you need to ace the AZ-104 certification exam 🏆,
 Feel free to **explore**, **fork**, and **contribute** if you'd like to collaborate or expand upon any topic! 🤝
 
 ---
-
-
