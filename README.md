@@ -28,3 +28,5 @@ Feel free to **explore**, **fork**, and **contribute** if you'd like to collabor
 💬 **Let’s Connect!**
 
 For questions, discussions, or collaboration opportunities, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jahangir-45886428a/)! 💼 Let's work together to become Azure pros! 🌟
+
+### Must Consult [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification)
