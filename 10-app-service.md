@@ -171,8 +171,6 @@ Azure App Service Plans are a fundamental aspect of deploying applications in Az
 - **Example**:
   - Adding more instances to your **Standard** tier plan to handle increased traffic, where each instance is capable of serving requests independently.
 
----
-
 ### **Key Differences**:
 
 | **Aspect**            | **Scale Up**                         | **Scale Out**                         |
@@ -182,7 +180,6 @@ Azure App Service Plans are a fundamental aspect of deploying applications in Az
 | **Performance**       | Better performance for resource-heavy apps | Improved handling of high traffic     |
 | **Cost**              | Higher cost per instance             | Potentially more economical for high traffic |
 
----
 
 ### **Conclusion**:
 
