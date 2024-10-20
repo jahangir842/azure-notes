@@ -103,6 +103,18 @@ Azure provides several options for ensuring high availability and scalability:
 
 ---
 
+### **Security Types for Azure VMs**
+  
+- **Standard Security**: Basic security features without hardware enhancements for general workloads.
+
+- **Virtual Trusted Platform Module (vTPM)**: Provides secure key storage and integrity verification for sensitive applications.
+
+- **Hardware Trusted Platform Module (TPM)**: Physical TPM chip offering stronger security for cryptographic operations, ideal for enterprise compliance.
+
+- **Confidential VMs**: Protects data in use with hardware-based trusted execution environments (TEE) for sensitive data processing.
+
+---
+
 ### **8. Use Cases for Azure VMs**
 - **Web Hosting**: Deploying web applications and databases.
   
@@ -146,6 +158,7 @@ This lab will walk you through the steps of creating and configuring a Virtual M
    - **Virtual machine name**: Name your VM (e.g., "MyTestVM").
    - **Region**: Select the same region as the resource group.
    - **Availability options**: Choose "No infrastructure redundancy required" for this lab.
+   - **Security Type**: 
    - **Image**: Select the operating system image (e.g., "Windows Server 2019" or "Ubuntu 20.04 LTS").
    - **Size**: Choose a VM size (e.g., "Standard B2s").
    - **Administrator account**: 
