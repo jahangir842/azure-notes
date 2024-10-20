@@ -18,6 +18,15 @@ Azure App Service is a fully managed platform for building, deploying, and scali
 
 ---
 
+**4 main options when creating a web app in Azure:**
+
+1. **Web App**: A dynamic app supporting various languages (e.g., .NET, Node.js, Python).
+2. **Static Web App**: For static content (HTML, CSS, JavaScript), ideal for frontend frameworks.
+3. **Web App + Database**: Combines a web app with a database (e.g., MySQL, SQL) for data-driven applications.
+4. **WordPress Web App**: A pre-configured option to quickly set up and host a WordPress site.
+
+---
+
 ### **Key Features**
 
 1. **Fully Managed Environment**:
