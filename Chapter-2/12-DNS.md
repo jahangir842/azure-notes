@@ -29,6 +29,7 @@ A **Public DNS Zone** is used for domains that are accessible over the public in
 A **Private DNS Zone** is used for internal domain name resolution within a virtual network (VNet) in Azure. It allows you to manage DNS records that are only accessible within your private VNet or connected VNets, not from the public internet.
 
 #### **Key Features of Private DNS Zones:**
+- **Auto Record Creation**: Along with the manual, services can create records automatically.
 - **Private DNS Resolution**: Only virtual machines (VMs) and resources within the linked VNets can resolve domain names from a private DNS zone.
 - **VNet Integration**: Private DNS zones can be linked to multiple VNets, enabling resources across VNets to resolve domain names.
 - **Custom Internal Domains**: You can create custom internal domain names (e.g., `app.internal.local`) for resources that don't need to be exposed publicly.
