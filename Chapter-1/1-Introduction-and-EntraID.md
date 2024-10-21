@@ -32,6 +32,9 @@ AZ-104 is a critical certification for professionals aiming to manage Azure serv
 ### 2. EntraID 
 **Entra ID**, previously known as **Azure Active Directory (Azure AD)**, is Microsoft’s cloud-based identity and access management service. It provides secure sign-in, authentication, and access control for users and applications within the Azure ecosystem and beyond. 
 
+- Unlike AD DS, Microsoft Entra ID is multi-tenant by design and is implemented specifically to ensure isolation between its individual directory instances.
+- At any given time, an Azure subscription must be associated with one, and only one, Microsoft Entra tenant.
+
 ### Key Features:
 1. **User Authentication**: Manages user identities and grants access to apps and services.
 2. **Single Sign-On (SSO)**: Allows users to access multiple apps with one set of credentials.
