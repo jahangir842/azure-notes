@@ -34,6 +34,7 @@ AZ-104 is a critical certification for professionals aiming to manage Azure serv
 
 - Unlike AD DS, Microsoft Entra ID is multi-tenant by design and is implemented specifically to ensure isolation between its individual directory instances.
 - At any given time, an Azure subscription must be associated with one, and only one, Microsoft Entra tenant.
+- You can associate the same Microsoft Entra tenant with multiple Azure subscriptions. This allows you to use the same users, groups, and applications to manage resources across multiple Azure subscriptions.
 
 ### Key Features:
 1. **User Authentication**: Manages user identities and grants access to apps and services.
