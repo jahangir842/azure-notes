@@ -41,6 +41,37 @@ Feel free to **explore**, **fork**, and **contribute** if you'd like to collabor
 
 ---
 
+# AZ-104, Introduction:
+
+AZ-104 is the **Microsoft Azure Administrator** certification exam. It is designed for IT professionals who manage cloud services, including storage, networking, security, and compute capabilities within Microsoft Azure.
+
+### Key Responsibilities for Azure Administrators:
+- **Manage Azure Subscriptions and Resources**: Monitor usage and billing, manage resource groups, and administer Azure policies.
+- **Implement and Manage Storage**: Secure and manage storage accounts, configure Azure files, and implement backup and restore capabilities.
+- **Manage and Configure Virtual Networks**: Set up virtual networks, implement network security groups, and configure load balancing.
+- **Manage Azure Identities and Governance**: Control access using role-based access control (RBAC), manage identities, and configure multi-factor authentication (MFA) and Azure EntraID.
+- **Deploy and Manage Compute Resources**: Create and configure virtual machines (VMs), manage VM backups, and monitor the health of VMs.
+- **Monitor and Maintain Azure Resources**: Set up monitoring, analyze alerts, and implement Azure backup solutions.
+
+### Target Audience
+- IT professionals looking to manage cloud resources in Azure environments.
+- Administrators managing day-to-day tasks such as deployment, monitoring, and security in Azure.
+
+### Related Certifications
+- **Prerequisite**: No formal prerequisites, though experience in Azure is recommended.
+- **Related Certifications**: Azure Fundamentals (AZ-900), Azure Solutions Architect (AZ-305), Azure DevOps Engineer (AZ-400).
+
+AZ-104 is a critical certification for professionals aiming to manage Azure services and is essential for cloud administrators.
+
+#### **1. Signing Up on the Azure Portal**
+- **URL**: [https://portal.azure.com](https://portal.azure.com)
+- **Steps to Sign Up**:
+   1. Go to the URL above.
+   2. Use your **email address** and **password** to log in. If you don’t have an account, sign up with a new one.
+   3. After login, you will be redirected to the Azure portal dashboard.
+
+---
+
 ## List of Skills for this Course:
 
 Skills measured as of October 26, 2023
