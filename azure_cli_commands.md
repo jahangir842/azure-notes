@@ -16,3 +16,4 @@ https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-p
 ```bash
 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/91caddb0-2111-48c6-9eb3-e83c855916c8" --sdk-auth
 ```
+
