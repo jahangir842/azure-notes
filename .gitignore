@@ -1,5 +1,4 @@
-credentials.md
-
+terraform/.env
 # Terraform working directory
 terraform/.terraform/
 
