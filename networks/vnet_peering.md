@@ -142,3 +142,94 @@ Add-AzVirtualNetworkPeering -Name "VNet2-to-VNet1" `
 * Similar to AWS VPC Peering but with support for **global peering** and better integration with **hub-and-spoke topologies**.
 
 ---
+
+# LAB
+
+- 🚀 Let’s build a **step-by-step lab** so you can practice **creating two VNets and peering them in the Azure Portal**.
+
+---
+
+## 🧪 Lab: Create and Peer Two VNets in Azure Portal
+
+## 🔹 Prerequisites
+
+* An **Azure subscription**
+* Access to the **Azure Portal** ([https://portal.azure.com](https://portal.azure.com))
+* Contributor or Owner role on the subscription
+
+---
+
+## Step 1: Create the First Virtual Network (VNet1)
+
+1. Go to **Azure Portal** → search for **Virtual Networks** → click **+ Create**.
+2. Fill in:
+
+   * **Subscription**: Your subscription
+   * **Resource group**: Create new → `RG-VNetLab`
+   * **Name**: `VNet1`
+   * **Region**: `East US`
+3. Under **IP Addresses**:
+
+   * Address space: `10.0.0.0/16`
+   * Subnet name: `Subnet1` → `10.0.0.0/24`
+4. Leave other settings default → Click **Review + Create** → **Create**.
+
+---
+
+## Step 2: Create the Second Virtual Network (VNet2)
+
+1. Again go to **Virtual Networks** → **+ Create**.
+2. Fill in:
+
+   * **Resource group**: `RG-VNetLab`
+   * **Name**: `VNet2`
+   * **Region**: Same (`East US`)
+3. Under **IP Addresses**:
+
+   * Address space: `10.1.0.0/16`
+   * Subnet name: `Subnet2` → `10.1.0.0/24`
+4. Click **Review + Create** → **Create**.
+
+---
+
+## Step 3: Peer VNet1 → VNet2
+
+1. Open **VNet1** from the portal.
+2. Under **Settings**, select **Peerings** → **+ Add**.
+3. Fill in:
+
+   * Peering link name (this VNet → remote VNet): `VNet1-to-VNet2`
+   * Peering link name (remote VNet → this VNet): `VNet2-to-VNet1`
+   * Select **VNet2** as the remote virtual network.
+   * Keep defaults (Allow virtual network access = Yes).
+4. Click **Add**.
+
+---
+
+## Step 4: Verify Peering
+
+1. In **VNet1 → Peerings**, you should see `Connected`.
+2. In **VNet2 → Peerings**, you should also see `Connected`.
+
+✅ At this point, both VNets are peered and can communicate privately.
+
+---
+
+## Step 5 (Optional): Test with Virtual Machines
+
+1. Create a VM in **Subnet1 (VNet1)** → e.g., `VM1`.
+2. Create another VM in **Subnet2 (VNet2)** → e.g., `VM2`.
+
+   * Use different private IP ranges (`10.0.x.x` and `10.1.x.x`).
+3. Connect to `VM1` via RDP/SSH.
+4. Ping the private IP of `VM2` → you should get a response. 🎉
+
+---
+
+## 📌 Lab Summary
+
+* Created two VNets (`10.0.0.0/16` and `10.1.0.0/16`).
+* Created a peering between them (`VNet1-to-VNet2`, `VNet2-to-VNet1`).
+* Verified communication using private IPs.
+
+---
