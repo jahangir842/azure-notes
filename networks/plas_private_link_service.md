@@ -242,35 +242,7 @@ az network bastion ssh \
 curl http://<private-endpoint-ip>
 ```
 
-## Step 7: Automating Connectivity Test with Ansible
-Use the following Ansible playbook to automate connectivity testing from the client VM to the Private Endpoint.
-
-<xaiArtifact artifact_id="5f5f60c4-6b28-49fa-98bd-425b3c9d1b92" artifact_version_id="94dc8dd6-7bad-4bba-9e34-5f86a51f4474" title="test_private_link.yml" contentType="text/yaml">
----
-- name: Test Private Link Connectivity in Canada Central
-  hosts: localhost
-  gather_facts: no
-  tasks:
-    - name: Retrieving Private Endpoint IP
-      ansible.builtin.command:
-        cmd: az network private-endpoint show --name private-endpoint --resource-group test-rg --query "networkInterfaces[0].ipConfigurations[0].privateIPAddress" --output tsv
-      register: private_endpoint_ip
-      changed_when: false
-
-    - name: Testing connectivity from client VM
-      ansible.builtin.command:
-        cmd: az vm run-command invoke --resource-group test-rg --name client-vm --command-id RunShellScript --scripts "curl -s -o /dev/null -w '%{http_code}' http://{{ private_endpoint_ip.stdout }}"
-      register: curl_result
-      changed_when: false
-
-    - name: Verifying HTTP response code
-      ansible.builtin.assert:
-        that:
-          - curl_result.stdout | int == 200
-        fail_msg: "Failed to connect to Private Endpoint. HTTP code: {{ curl_result.stdout }}"
-        success_msg: "Successfully connected to Private Endpoint. HTTP code: {{ curl_result.stdout }}"
-
-## Step 8: Clean up resources
+## Step 7: Clean up resources
 When no longer needed, use the az group delete command to remove the resource group, private link service, load balancer, and all related resources.
 
 ```bash
