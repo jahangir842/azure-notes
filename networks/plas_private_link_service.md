@@ -269,3 +269,11 @@ Use the following Ansible playbook to automate connectivity testing from the cli
           - curl_result.stdout | int == 200
         fail_msg: "Failed to connect to Private Endpoint. HTTP code: {{ curl_result.stdout }}"
         success_msg: "Successfully connected to Private Endpoint. HTTP code: {{ curl_result.stdout }}"
+
+## Step 8: Clean up resources
+When no longer needed, use the az group delete command to remove the resource group, private link service, load balancer, and all related resources.
+
+```bash
+az group delete \
+    --name test-rg 
+```
