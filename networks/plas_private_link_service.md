@@ -27,8 +27,10 @@ az network vnet create \
 ```
 
 ### Updating Subnet for Private Link Service
-Disable private link service network policies on `subnet-1` to allow Private Link Service creation.
-
+- Disable private link service **network policies** on `subnet-1` to allow Private Link Service creation.
+- Without disabling the network policies, the az network private-link-service create command would fail.
+- Because Azure would block the service from associating with the subnet due to the default policy restrictions.
+- 
 ```bash
 az network vnet subnet update \
   --name subnet-1 \
