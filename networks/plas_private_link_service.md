@@ -30,7 +30,7 @@ az network vnet create \
 - Disable private link service **network policies** on `subnet-1` to allow Private Link Service creation.
 - Without disabling the network policies, the az network private-link-service create command would fail.
 - Because Azure would block the service from associating with the subnet due to the default policy restrictions.
-- 
+  
 ```bash
 az network vnet subnet update \
   --name subnet-1 \
@@ -39,7 +39,7 @@ az network vnet subnet update \
   --private-link-service-network-policies Disabled
 ```
 
-### Creating Private Link Service
+### Creating Private Link Service (PLS)
 Create a Private Link Service associated with `vnet-1` and `subnet-1`, using a load balancer.
 
 ```bash
@@ -66,7 +66,7 @@ az network vnet create \
   --subnet-prefixes 10.1.0.0/24
 ```
 
-### Creating Private Endpoint
+### Creating Private Endpoint (PE)
 Create a Private Endpoint in `vnet-pe` to connect to the Private Link Service.
 
 ```bash
