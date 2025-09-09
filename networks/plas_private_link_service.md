@@ -7,6 +7,7 @@ Official reference: [Microsoft Azure Private Link Service Documentation](https:/
 ## Step 1: Create the Architecture in Canada Central
 
 ### Creating Resource Group
+
 Create a resource group named `test-rg` in the `canadacentral` region.
 
 ```bash
@@ -14,6 +15,7 @@ az group create --name test-rg --location canadacentral
 ```
 
 ### Creating Producer VNet and Subnet
+
 Set up the producer virtual network (`vnet-1`) and its subnet (`subnet-1`).
 
 ```bash
@@ -26,21 +28,64 @@ az network vnet create \
   --subnet-prefixes 10.0.0.0/24
 ```
 
+### Creating Load Balancer
+
+Create the load balancer resource.
+
+```bash
+az network lb create \
+  --resource-group test-rg \
+  --name load-balancer \
+  --sku Standard \
+  --vnet-name vnet-1 \
+  --subnet subnet-1 \
+  --frontend-ip-name frontend \
+  --backend-pool-name backend-pool
+```
+
+Create the health probe.
+
+```bash
+az network lb probe create \
+  --resource-group test-rg \
+  --lb-name load-balancer \
+  --name health-probe \
+  --protocol tcp \
+  --port 80
+```
+
+Create the load balancer rule.
+
+```bash
+az network lb rule create \
+  --resource-group test-rg \
+  --lb-name load-balancer \
+  --name http-rule \
+  --protocol tcp \
+  --frontend-port 80 \
+  --backend-port 80 \
+  --frontend-ip-name frontend \
+  --backend-pool-name backend-pool \
+  --probe-name health-probe \
+  --idle-timeout 15 \
+  --enable-tcp-reset true
+```
+
 ### Updating Subnet for Private Link Service
-- Disable private link service **network policies** on `subnet-1` to allow Private Link Service creation.
-- Without disabling the network policies, the az network private-link-service create command would fail.
-- Because Azure would block the service from associating with the subnet due to the default policy restrictions.
-  
+
+Disable private link service network policies on `subnet-1` to allow Private Link Service creation. Without disabling these policies, the `az network private-link-service create` command will fail due to Azure's default policy restrictions blocking the service from associating with the subnet.
+
 ```bash
 az network vnet subnet update \
   --name subnet-1 \
   --vnet-name vnet-1 \
   --resource-group test-rg \
-  --private-link-service-network-policies Disabled
+  --disable-private-link-service-network-policies true
 ```
 
 ### Creating Private Link Service (PLS)
-Create a Private Link Service associated with `vnet-1` and `subnet-1`, using a load balancer.
+
+Create a Private Link Service associated with `vnet-1` and `subnet-1`, using the load balancer.
 
 ```bash
 az network private-link-service create \
@@ -54,6 +99,7 @@ az network private-link-service create \
 ```
 
 ### Creating Consumer VNet and Subnet
+
 Set up the consumer virtual network (`vnet-pe`) and its subnet (`subnet-pe`).
 
 ```bash
@@ -67,6 +113,7 @@ az network vnet create \
 ```
 
 ### Creating Private Endpoint (PE)
+
 Create a Private Endpoint in `vnet-pe` to connect to the Private Link Service.
 
 ```bash
@@ -78,7 +125,7 @@ export resourceid=$(az network private-link-service show \
 az network private-endpoint create \
   --connection-name connection-1 \
   --name private-endpoint \
-  --private-connection-resource-id $resourceid \
+  --private-connection-resource-id "$resourceid" \
   --resource-group test-rg \
   --subnet subnet-pe \
   --manual-request false \
@@ -87,6 +134,7 @@ az network private-endpoint create \
 ```
 
 ## Step 2: Creating Backend VM
+
 Deploy a backend VM in `vnet-1`, `subnet-1` with NGINX installed to serve as the Private Link Service backend.
 
 ```bash
@@ -104,6 +152,7 @@ az vm create \
 ```
 
 ### Installing NGINX on Backend VM
+
 Install and start NGINX on the backend VM.
 
 ```bash
@@ -115,6 +164,7 @@ az vm run-command invoke \
 ```
 
 ## Step 3: Creating Client VM
+
 Deploy a client VM in `vnet-pe`, `subnet-pe` to test connectivity to the Private Endpoint.
 
 ```bash
@@ -132,6 +182,7 @@ az vm create \
 ```
 
 ## Step 4: Configuring Load Balancer Backend Pool
+
 Add the backend VM to the load balancer’s backend pool.
 
 ```bash
@@ -144,6 +195,7 @@ az network lb address-pool add \
 ```
 
 ### Verifying Backend Pool Configuration
+
 Verify that the backend VM is correctly added to the load balancer’s backend pool.
 
 ```bash
@@ -155,6 +207,7 @@ az network lb address-pool show \
 ```
 
 ## Step 5: Retrieving Private Endpoint IP
+
 Obtain the Private Endpoint’s IP address for connectivity testing.
 
 ```bash
@@ -168,9 +221,11 @@ az network private-endpoint show \
 Note the IP address (e.g., `10.1.0.x`) for use in connectivity testing.
 
 ## Step 6: Testing Connectivity
+
 Since the VMs lack public IPs, use either a temporary public IP or Azure Bastion to access the client VM for testing.
 
 ### Option 1: Assigning Temporary Public IP
+
 Assign a temporary public IP to the client VM for SSH access.
 
 ```bash
@@ -196,6 +251,7 @@ curl http://<private-endpoint-ip>
 **Expected Output**: NGINX welcome page HTML or a 200 HTTP status code.
 
 ### Cleaning Up Temporary Public IP
+
 Remove the temporary public IP after testing.
 
 ```bash
@@ -210,6 +266,7 @@ az network public-ip delete \
 ```
 
 ### Option 2: Setting Up Azure Bastion
+
 Create a subnet and Azure Bastion for secure access to the client VM.
 
 ```bash
@@ -244,10 +301,10 @@ az network bastion ssh \
 curl http://<private-endpoint-ip>
 ```
 
-## Step 7: Clean up resources
-When no longer needed, use the az group delete command to remove the resource group, private link service, load balancer, and all related resources.
+## Step 7: Clean Up Resources
+
+When no longer needed, remove the resource group, Private Link Service, load balancer, and all related resources.
 
 ```bash
-az group delete \
-    --name test-rg 
+az group delete --name test-rg --yes --no-wait
 ```
